@@ -1,0 +1,23 @@
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+tr,
+td {
+    border: 2px solid;
+}
+
+th {
+    background-color: red;
+}
+
+tr:hover {
+    background-color: rgb(18, 198, 9);
+}
+
+.fruits{
+    background-color: rgb(60, 214, 163);
+}
