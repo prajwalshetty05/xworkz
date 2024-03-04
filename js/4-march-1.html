@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        p {
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+
+<body class=" container border border-info border-5 rounded-5 p-3 m-5">
+    <form class="m-3 p-3 h5 ">
+        <p class="h1 text-uppercase">Form</p> <br>
+        <label>
+            <p>Name:</p>
+            <input type="text" id="name">
+        </label>
+        <br>
+        <label>
+            <p>Age:</p><input type="text" id="age">
+        </label> <br>
+    </form>
+    <input class="btn btn-dark rounde-1 mt-3" type="submit" onclick="getData()"></input>
+    <script>
+        function getData(event) {
+            let a = document.getElementById("name");
+            let name = a.value;
+            console.log(name);
+            let b = document.getElementById("age")
+            let age = b.value;
+            console.log(age);
+        }
+    </script>
+</body>
+
+</html>
