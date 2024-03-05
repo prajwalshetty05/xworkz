@@ -6,40 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="../animate.css">
     <script src="../bootstrap.js"></script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        function aos() {
+            if (document.body.scrollTop < 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("p").className = "";
+            } else {
+                document.getElementById("myP").className = "";
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-light container-fluid">
     <div class="nav-bar ">
-        <nav class="navbar navbar-expand-sm bg-light  navbar-ligth">
+        <nav class="navbar navbar-expand-sm bg-light  navbar-light">
             <div class="container-fluid ">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="./img/rr logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
                 </a>
                 <ul class="navbar-nav navbar-collapse">
                     <li class="nav-item text-left">
-                        <a class="nav-link text-dark " href="#">Ghost</a>
+                        <a class="nav-link text-center" href="ghost.html">Ghost</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark " href="#">Wraith</a>
+                        <a class="nav-link text-dark " href="wraith.html">Wraith</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark " href="#">Cullinan</a>
+                        <a class="nav-link text-dark" href="cullinan.html">Cullinan</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="container-fluid bg-dark text-light text-center p-5">
-        <p class="h1" style="font-family:bol">Rolls Royce</p>
-        <p class="h4">"Strive for perfection in everything you do"</p>
+        <p class="h1 animate-on-scroll animate__animated animate__fadeIn animate__slow animate__repeat-1 animate__delay-0.7s"
+            id="heading">Rolls Royce</p>
+        <p class="h4 animate__animated animate__pulse animate__slow animate__ animaterepeat-1__delay-0.5s">
+            "Strive
+            for perfection in everything you do"</p>
     </div>
     <div class="container-fluid text-left m-1">
         <div class="row">
-            <div class="col-md-3 bg-light text-dark border ">
-                <div class=" h2 ">About:</div>
+            <div
+                class="col-md-3 bg-light text-dark border animate__animated animate__slideInLeft animate__slow animate__repeat-1 animate__delay-0.5s">
+                <div class=" h2 " id="p">About:</div>
                 <div class=" h3">Image of Rolls Royce</div>
-                <div><img src="./img/rr1 img.jfif" alt=""></div>
+                <div><img src="./img/rr1 img.jfif"
+                        class="animate__animated animate__fadeInLeft animate__slow animate__repeat-1 animate__delay-1s"
+                        alt=""></div>
 
                 <p class="ml-1 mt-2 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maxime in,
                     dolor
@@ -48,12 +66,15 @@
                     necessitatibus inventore ullam?
                 </p>
             </div>
-            <div class="col-md-9 bg-light text-dark border">
+            <div
+                class="col-md-9 bg-light text-dark border animate__animated animate__slideInRight animate__slow animate__repeat-1 animate__delay-1s">
                 <div class="h2 ">About:</div>
                 <div class="h3">
                     <p>Feb 20,2024</p>
                 </div>
-                <div><img src="./img/rr2 img.jfif" alt=""></div>
+                <div><img src="./img/rr2 img.jfif"
+                        class="animate__animated animate__flipInX animate__slow animate__repeat-1 animate__delay-1s"
+                        alt=""></div>
 
                 <p class="ml-1 mt-2 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maxime in,
                     dolor
@@ -72,33 +93,40 @@
             <div class="container-fluid">
                 <ul class="navbar-nav col  h5">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-primary ">Blog</a>
+                        <a href="#"
+                            class="nav-link text-primary animate__animated animate__slideInLeft animate__fast animate__repeat-1 animate__delay-3s">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-primary">News</a>
+                        <a href="#"
+                            class="nav-link text-primary animate__animated animate__slideInLeft animate__fast animate__repeat-1 animate__delay-3s">News</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-primary">About</a>
+                        <a href="#"
+                            class="nav-link text-primary animate__animated animate__slideInLeft animate__fast animate__repeat-1 animate__delay-3s">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-primary">Contact</a>
+                        <a href="#"
+                            class="nav-link text-primary animate__animated animate__slideInLeft animate__fast animate__repeat-1 animate__delay-3s">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="col-md-9 border">
-            <p class="h2 text-left">Introducing:Rolls Royce Boat Tail</p>
+            <p
+                class="h2 text-left animate__animated animate__fadeInDown animate__slower animate__repeat-1 animate__delay-0.5s">
+                Introducing:Rolls Royce Boat Tail</p>
             <p class="h3">Feb 20,2024</p>
-            <img src="https://w0.peakpx.com/wallpaper/191/143/HD-wallpaper-rolls-royce-boat-tail-2021.jpg" alt=""
+            <img src="https://w0.peakpx.com/wallpaper/191/143/HD-wallpaper-rolls-royce-boat-tail-2021.jpg" alt="rel img"
                 height="250px" width="400">
-            <p class="m-1 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reiciendis quas
+            <p class="m-1 p-1 animate__animated animate__slideInRight animate__slow  ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reiciendis quas
                 eveniet quaerat
                 reprehenderit quam autem eos facilis, assumenda quod libero praesentium labore molestias illo vero quasi
                 nihil rerum. Cumque.
             </p>
         </div>
     </div>
-    <div class="bg-dark container-fluid p-5 text-light text-center">Footer</div>
+    <div class="bg-dark container-fluid p-5 text-light text-center" id="footer">Footer</div>
 </body>
 
 </html>

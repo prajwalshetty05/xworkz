@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    enter name:<input type="text" id="name" onchange="getName()">
+    enter age: <input type="text" id="age" onchange="getAge()">
+
+    <h1 id="h1"></h1>
+    <h1 id="h2"></h1>
+
+    <script>
+        function getName() {
+            let a = document.getElementById("name");
+            let name = a.value;
+            console.log(name)
+            document.getElementById("h1").innerHTML = "welcome "+ name;
+        }
+        function getAge() {
+            let b = document.getElementById("age");
+            let age = b.value;
+            console.log(age);
+            document.getElementById("h2").innerHTML = "you are "+age+ " years old";
+        }
+    </script>
+</body>
+
+</html>

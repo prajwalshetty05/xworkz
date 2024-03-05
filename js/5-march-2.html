@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    enter clg name:<input type="text" id="clg_name" onchange="getClgName()">
+    enter roll no: <input type="text" id="roll_no" onchange="getroll_no()">
+
+    <h1 id="h3"></h1>
+    <h1 id="h4"></h1>
+
+    <script>
+        function getClgName() {
+            let c = document.getElementById("clg_name");
+            let clg_name = c.value;
+            console.log(clg_name)
+            document.getElementById("h3").innerHTML = "you study in "+ clg_name;
+        }
+        function getroll_no() {
+            let b = document.getElementById("roll_no");
+            let roll_no = b.value;
+            console.log(roll_no);
+            document.getElementById("h4").innerHTML = "your register number is: "+roll_no;
+        }
+    </script>
+</body>
+
+</html>
