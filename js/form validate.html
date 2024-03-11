@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container p-5  ">
+        <p class="h2 text-left">Login</p>
+        <span style="color: rgb(194, 46, 46);" id="msg"></span> <br>
+        <label class=>Name:</label> <br>
+        <input type="text" id="name" class="form-control  mb-3 rounded-3 " onchange="validate()"><br>
+        <label>contact:</label>
+        <input type="email" id="contact" class="form-control  mb-3 rounded-3" onchange="validate()"><br>
+        <input type="submit" class="btn btn-primary text-white  btn-outline-dark  d-block  mt-3">
+        <script>
+            function validate() {
+                let name = document.getElementById("name").value;
+                let contact = document.getElementById("contact").value;
+                if (name.length < 3 || name == "" || typeof (name) == Number) {
+                    document.getElementById("msg").innerHTML = "Please enter valid name"
+                }
+               
+               else if (contact.length < 10 || contact.length > 10 ) {
+                    document.getElementById("msg").innerHTML = "enter valid contact number";
+                }
+                else {
+                    document.getElementById("msg").innerHTML="";
+                }
+document.get
+
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>
