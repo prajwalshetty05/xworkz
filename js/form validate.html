@@ -21,7 +21,7 @@
             function validate() {
                 let name = document.getElementById("name").value;
                 let contact = document.getElementById("contact").value;
-                if (name.length < 3 || name == "" || typeof (name) == "bigint") {
+                if (name.length < 3 || name == "" || typeof (name) == Number) {
                     document.getElementById("msg").innerHTML = "Please enter valid name"
                 }
 
@@ -32,7 +32,6 @@
                     document.getElementById("msg").innerHTML = "";
                 }
             }
-
         </script>
     </div>
 </body>

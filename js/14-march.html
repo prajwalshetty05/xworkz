@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        getData();
+        function getData() {
+            let Json = { "coord": { "lon": 75.5667, "lat": 13.9167 }, "weather": [{ "id": 802, "main": "Clouds", "description": "scattered clouds", "icon": "03n" }], "base": "stations", "main": { "temp": 299.05, "feels_like": 299.26, "temp_min": 299.05, "temp_max": 299.05, "pressure": 1013, "humidity": 60, "sea_level": 1013, "grnd_level": 949 }, "visibility": 10000, "wind": { "speed": 4.65, "deg": 257, "gust": 8.91 }, "clouds": { "all": 29 }, "dt": 1710424342, "sys": { "country": "IN", "sunrise": 1710378358, "sunset": 1710421678 }, "timezone": 19800, "id": 1256515, "name": "Shimoga", "cod": 200 }
+            let a = fetch('https://api.openweathermap.org/data/2.5/weather?q=mangalore&units=metric&appid=2d0abadf28f4c24129fb4b49b93514bc')
+            console.log("aaaa", a)
+            let b = a.then();
+            console.log("bbbb", b)
+            let res = b.then(res => res.json());
+            setTimeout(function interval() { console.log(res) }, 1000);
+            console.log(Json.weather[0].main)
+        }
+    </script>
+</body>
+
+</html>
